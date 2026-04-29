@@ -226,16 +226,16 @@
       overflow:hiddenで切り取る
     */
     .chat-body {
-      height: 640px;        /* 表示したい高さ */
+      height: 640px;
       overflow: hidden;
       position: relative;
     }
     .chat-body iframe {
       position: absolute;
-      top: -56px;           /* Difyヘッダー分上にずらす */
+      top: 0;              /* Difyヘッダーはそのまま表示 */
       left: 0;
       width: 100%;
-      height: calc(100% + 56px);  /* ずらした分だけ高さを足す */
+      height: calc(100% + 48px); /* 下の余白分だけ伸ばして隠す */
       border: none;
     }
 
