@@ -546,11 +546,12 @@
     .chat-body { height: 600px; position: relative; overflow: hidden; }
     .chat-body iframe { 
       width: 100%; 
-      height: 100%; 
+      height: 115%;  /* Difyヘッダー分だけ上にはみ出させて隠す */
       border: none; 
       display: block;
       position: absolute;
-      top: 0; left: 0;
+      top: -56px;   /* Difyのヘッダー高さ分上にずらす */
+      left: 0;
     }
 
     /* チャットパネルをスクロールしても追従させる */
